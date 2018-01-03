@@ -32,7 +32,7 @@ module TogtalApi
     
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins '//togtal-albertsharp.c9users.io:8080'
+        origins '*'
         resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
       end
     end
