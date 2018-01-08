@@ -15,8 +15,6 @@ gem 'mongo', '~> 2.4.3'
 gem 'mongoid', '~> 6.2.1'
 # Use Mondoid Geospatial
 gem 'mongoid-geospatial'
-# Enable CORS
-gem 'rack-cors', :require => 'rack/cors'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
@@ -30,6 +28,8 @@ gem 'rack-cors', :require => 'rack/cors'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors', :require => 'rack/cors'
+
+gem 'httparty', '~> 0.15.6'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
